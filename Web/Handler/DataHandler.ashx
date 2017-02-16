@@ -32,6 +32,8 @@ public class DataHandler : IHttpHandler
             case "getLeftTree":
                 sb.Append(getLeftTree());
                 break; 
+                
+                
 
             default:
                 sb.Append("");
