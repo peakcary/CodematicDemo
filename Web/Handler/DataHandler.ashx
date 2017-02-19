@@ -50,14 +50,9 @@ public class DataHandler : IHttpHandler
         DataSet ds = new DataSet();
         StringBuilder strWhere = new StringBuilder();
         Maticsoft.BLL.user bll = new Maticsoft.BLL.user();
-        ds = bll.GetList(strWhere.ToString());   
-        
+        ds = bll.GetList(strWhere.ToString());  
         sb.Append("{'hello':'peak'}");
-        return sb.ToString();
-      
-        //DataTable dt = ClassData.getTreeData();
-        //GetTreeJsonByTable(dt, "distrctID", "districtName", "parentID", "0");
-        //return result.ToString();
+        return sb.ToString(); 
     }
      
 
